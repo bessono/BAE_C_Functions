@@ -38,8 +38,8 @@ void bae_str_replace(char *str, char *from, char *to){
         int fpost =0;
         char new_str[100000];
         bae_null_to_array(new_str);
-        fpos = strstr(str,from);
-        if(fpos != -1){
+
+        if(strstr(str,from) != NULL){
                 z=0;
                 for(i=0;i<strlen(str);i++){
                         new_str[z] = str[i];
